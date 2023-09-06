@@ -67,8 +67,8 @@ const CreateProduct = () => {
      {loading ? (
       <div>Loading</div>
      ) : (
-       <div className='bg-orange-500 text-white' >
-        <form onSubmit={handleSubmit} >
+       <div className='bg-orange-500 text-white h-screen flex flex-col items-center justify-center' >
+        <form onSubmit={handleSubmit}  className=' space-x-4 space-y-4'>
         <input className='bg-transparent border placeholder:text-white border-white rounded-xl px-1 py-2 outline-none' type="text" placeholder='Category' name="Category" value={category}  onChange={(e)=>setCategory(e.target.value)}  />
         <input className='bg-transparent border placeholder:text-white border-white rounded-xl px-1 py-2 outline-none' type="text" placeholder='Type' onChange={(e)=>setType(e.target.value)} name='Type' value={type}/>
       <br />
@@ -86,9 +86,7 @@ const CreateProduct = () => {
         </form>
         </div>
      )}  <div >
-     
-    
-      
+
     </div>
     </div>
   )

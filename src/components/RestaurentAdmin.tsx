@@ -39,19 +39,19 @@ const RestaurentAdmin = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} >
-        <input type="text" placeholder='enter Name' value={name} onChange={(e)=>setName(e.target.value)} />
-        <input type="text" placeholder='enter Description' value={description} onChange={(e)=>setDescription(e.target.value)} />
-        <input type="text" placeholder='enter time' value={time} onChange={(e)=>setTime(e.target.value)} />
-        <input type="text" placeholder='enter rating' value={rating} onChange={(e)=>setRating(e.target.value)}/>
+    <div className='bg-orange-600 h-screen flex flex-col items-center justify-center'>
+      <form onSubmit={handleSubmit} className='flex-col flex space-y-5'>
+        <input className='p-2 rounded-xl' type="text" placeholder='enter Name' value={name} onChange={(e)=>setName(e.target.value)} />
+        <input className='p-2 rounded-xl' type="text" placeholder='enter Description' value={description} onChange={(e)=>setDescription(e.target.value)} />
+        <input className='p-2 rounded-xl' type="text" placeholder='enter time' value={time} onChange={(e)=>setTime(e.target.value)} />
+        <input className='p-2 rounded-xl' type="text" placeholder='enter rating' value={rating} onChange={(e)=>setRating(e.target.value)}/>
         <input
           id="file"
           type="file"
           onChange={handleSelectFile}
           multiple={false}
           />
-        <button type='submit'>Click me</button>
+        <button type='submit' className='bg-white px-1 py-2 rounded-xl'>Click me</button>
         <ToastContainer />
         </form>
     </div>

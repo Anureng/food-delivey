@@ -28,6 +28,7 @@ import { useEffect, useState } from "react";
       )
     });
     setItem(newItem);
+    console.log(setItem(newItem));
   };
 
   
