@@ -36,6 +36,11 @@ const Navbar = () => {
         }
              <button onClick={()=>signOut()}>SignOut</button>
         </div>
+      <div>
+        <Link href="https://food-delivey.vercel.app/admin">
+      Admin
+        </Link>
+      </div>
     </div>
   )
 }
